@@ -16,19 +16,6 @@ like [soil texture](https://en.wikipedia.org/wiki/Soil_texture).
 	- numpy
 	- pycairo
 
-Scale:200 Rows: 10
-
-![](examples/triangle_200_10.png) 
-
-Scale:200 Rows: 25
-
-![](examples/triangle_200_25.png)
-
-Scale:200 Rows: 50
-
-![](examples/triangle_200_50.png)
-
-
-Rows: 10          | Rows: 25  | Rows: 50
+10 Rows          | 25 Rows  | 50 rows
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](examples/triangle_200_10.png)  | ![](examples/triangle_200_25.png) | ![](examples/triangle_200_50.png)

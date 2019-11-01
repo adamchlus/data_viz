@@ -1,17 +1,13 @@
 import numpy as np
 import cairo
 
-#Draw black cavas
-c = cairo.Context(surface)
-c.set_source_rgb(0,0,0)
-c.paint()
-
 #Set number of rows in triangle
 rows =50
 
 #Set pixel density
 PIXEL_SCALE = 200
 
+#Calculate sizes
 tri_height = int(PIXEL_SCALE/rows)
 half_width = np.tan(np.radians(30))*tri_height
 canvas_width = np.ceil(2*half_width*rows)
@@ -20,7 +16,6 @@ canvas_height = np.ceil(tri_height*rows)
 #Add a small border
 canvas_width  += canvas_width*.1
 canvas_height += canvas_height*.1
-
                             
 # Set triangle top location  
 tri_top_x = .5*canvas_width
@@ -30,7 +25,7 @@ tri_top_y = canvas_height * .05
 surface = cairo.ImageSurface(cairo.FORMAT_RGB24,
                              int(canvas_width),
                              int(canvas_height))
-#Draw bakc cavas
+#Draw black cavas
 c = cairo.Context(surface)
 c.set_source_rgb(0,0,0)
 c.paint()
