@@ -17,21 +17,24 @@
 
 <h1>Barycentric legend</h1>
 
-<p><em>barycentric_triangle_legend.py</em></p>
+<p>Given a pixel density and number of rows the script creates a triangular RGB legend based off
+barycentric coordinates, useful when mapping trivariate data where variables always add to 1,
+like <a href="https://en.wikipedia.org/wiki/Soil_texture">soil texture</a>.</p>
 
-<p>Creates a triangular legend based off barycentric coordinates, useful when mapping trivariate data
-where variables always add to 1, like  <a href="https://en.wikipedia.org/wiki/Soil_texture">soil texture</a>.</p>
+<h2>Script:</h2>
 
-<p>Given pixel density and number of rows in the triangle create a RGB legend.</p>
+<pre><code>barycentric_triangle_legend.py
+</code></pre>
 
-<p>Scale:200 Rows: 10
-<img src="examples/triangle_200_10.png" alt="" title="" /></p>
+<h2>Requirements:</h2>
 
-<p>Scale:200 Rows: 25
-<img src="examples/triangle_200_25.png" alt="" title="" /></p>
+<pre><code>- numpy
+- pycairo
+</code></pre>
 
-<p>Scale:200 Rows: 50
-<img src="examples/triangle_200_50.png" alt="" title="" /></p>
+<p>10 Rows          | 25 Rows  | 50 rows
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="examples/triangle_200_10.png" alt="" title="" />  | <img src="examples/triangle_200_25.png" alt="" title="" /> | <img src="examples/triangle_200_50.png" alt="" title="" /></p>
 
 </body>
 </html>
